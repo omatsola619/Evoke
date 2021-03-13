@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evoke</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+      
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--navbar and header-->
+      <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top sticky">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item default">
+                    <a href="#" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item default">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item default">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mx-auto order-0">
+            <a href="#" class="navbar-brand mx-auto">
+                <img class="logo" src="images/logo.png" alt="" width="90px" >
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="nav navbar-nav ml-auto" id="login-signin">
+                <li class="nav-item">
+                    <a href="#" id="login" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="signup" class="nav-link">SignUp</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <!--end of navbar-->
+      <!--intro header-->
+      <div class="container">
+<div class="row" id="row1">
+    <div class="col-md-6 text-center" id="col1">
+        <h2 class="hard">THE HARD MADE EASY</h2>
+        <p class="head-text">With Evoke you can learn aything at your pace
+        Buy top courses From secondary school subjects
+    to university courses</p>
+        <button type="button" class="btn btn-default" id="bot">Learn More</button>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="images/learn2.png" width="100%" alt="">
+    </div>
+</div>
+</div>
+<!--end of intro-->
+
+<!--search bar-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" id="barr" type="search" placeholder="Search Courses or Topics">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-default" id="search-button" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+<!--end of search bar-->
+
+
+<!--inbetween cards-->
+
+<div class="grey-bg container-fluid">
+  <section id="minimal-statistics">
+    <div class="row">
+      <div class="col-12 mt-3 mb-1">
+        <h4 class="text-uppercase text-center">courses categories</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-chemistry default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>258</h3>
+                  <span>Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-rocket default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>156</h3>
+                  <span>Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-music-tone-alt default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>489</h3>
+                  <span>Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-screen-desktop default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>423</h3>
+                  <span>Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-globe default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3 class="Primary">278</h3>
+                  <span>Environment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-film default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3 class="default">156</h3>
+                  <span>Arts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-bar-chart default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3 class="default">689</h3>
+                  <span>Government</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                  <i class="icon-wallet default font-large-2 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3 class="default">1,423</h3>
+                  <span>Business</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  </section>
+  
+</div>
+
+
+
+
+<!--end of inbetween-->
+
+
+
+<!--card for top courses-->
+    <div class="container-fluid mt-5">
+
+<div class="card">
+    <div class="row" id="row2">
+        <div class="col-md-4">
+            <img src="images/features.jpg" class="img-fluid" id="card1-img" alt="">
+        </div>
+        <div class="col-md-8" id="blog">
+            <h2 class="card-title mt-4">Graphics Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut autem ipsam possimus laboriosam explicabo accusamus officia. Itaque repellat non natus, eos dicta ipsa culpa officia sint earum autem! Enim facilis amet asperiores. Voluptatem sed blanditiis a, deleniti id odit.</p>
+            <button class="btn btn-default" id="bot">Learn More</button>
+        </div>
+    </div>
+</div>
+<div class="card mt-2">
+    <div class="row" id="row2">
+        <div class="col-md-4">
+            <img src="images/graphic.jpg" class="img-fluid" id="card1-img" alt="">
+        </div>
+        <div class="col-md-8" id="blog">
+            <h2 class="card-title mt-4">Graphics Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut autem ipsam possimus laboriosam explicabo accusamus officia. Itaque repellat non natus, eos dicta ipsa culpa officia sint earum autem! Enim facilis amet asperiores. Voluptatem sed blanditiis a, deleniti id odit.</p>
+            <button class="btn btn-default" id="bot">Learn More</button>
+        </div>
+    </div>
+</div>
+<div class="card mt-2">
+    <div class="row" id="row2">
+        <div class="col-md-4">
+            <img src="images/online.jpg" class="img-fluid" id="card1-img" alt="">
+        </div>
+        <div class="col-md-8" id="blog">
+            <h2 class="card-title mt-4">Graphics Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut autem ipsam possimus laboriosam explicabo accusamus officia. Itaque repellat non natus, eos dicta ipsa culpa officia sint earum autem! Enim facilis amet asperiores. Voluptatem sed blanditiis a, deleniti id odit.</p>
+            <button class="btn btn-default" id="bot">Learn More</button>
+        </div>
+    </div>
+</div>
+<div class="card mt-2">
+    <div class="row" id="row2">
+        <div class="col-md-4">
+            <img src="images/classwork.jpg" class="img-fluid" id="card1-img" alt="">
+        </div>
+        <div class="col-md-8" id="blog">
+            <h2 class="card-title mt-4">Graphics Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut autem ipsam possimus laboriosam explicabo accusamus officia. Itaque repellat non natus, eos dicta ipsa culpa officia sint earum autem! Enim facilis amet asperiores. Voluptatem sed blanditiis a, deleniti id odit.</p>
+            <button class="btn btn-default" id="bot">Learn More</button>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!--the highlight-->
+<div class="highlight-blue">
+  <div class="container">
+      <div class="intro">
+          <h2 class="text-center">MODE OF OPERATIONS</h2>
+          <p class="text-center">Want to know how evoke works ? </p>
+      </div>
+      <div class="buttons text-center" ><a class="btn btn-default" id="high-btn" role="button" href="#">Get Started</a></div>
+  </div>
+</div>
+<!--end of highlight-->
+
+<!--why learn from us-->
+<div class="container" id="whylearn">
+  <h4 id="quest" class="text-center">WHY LEARN FROM US ?</h4>
+  <div class="row">
+    <div class="col-md-4" id="whycol">
+      <h6 class="text-center" id="tag"> <b> Simplicity</b></h6>
+      <p class="text-center">we offer a range of courses that are very important to you , ranging from your secondary school
+        subjects to your teitary institution courses
+      </p>
+    </div>
+    <div class="col-md-4" id="whycol">
+      <h6 class="text-center" id="tag"><b>Earning Service</b></h6>
+      <p class="text-center">Our earning services enables you to earn not only learn, but earn money from our website by making
+        a course you understand so well even as a student
+      </p>
+    </div>
+    <div class="col-md-4" id="whycol">
+      <h6 class="text-center" id="tag"><b>Flexibility</b></h6>
+      <p class="text-center">We are so flexible that you can use our services anywhere anythime of the day , and also engage in
+        our up coming community forum.
+      </p>
+    </div>
+  </div>
+</div>
+<!--code for footer-->
+<div class="page-end">
+  
+  <div class="container">
+    <div class="row" id="footer-row">
+      <div class="col-md-6 col-md-3">
+        <h6>Evoke</h6>
+        <p>Evoke is an educational website that has a purpose of bringing education closer to the 
+          people of today who are very digital in every way, evoke makes it possible for students
+          and teachers to post their course of them teaching a particular topic and in the process
+           make money
+        </p>
+      </div>
+
+      <div class="col-sm-6 col-md-2">
+        <h6>Services</h6>
+        <ul>
+          <li><a href="#">Make course</a></li>
+          <li><a href="#">Teach On Evoke</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="#">Evoketeam@gmail.com</a></li>
+          <li><a href="#">+2348100349932</a></li>
+          <li><a href="#">Lagos , Nigeria</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <h6>Engage</h6>
+        <ul>
+          <li><a href="#">Join us</a></li>
+          <li><a href="#">Support Us</a></li>
+          <li><a href="#">Partnership</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="social">
+        <h6>Follow Us</h6>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+
+      </div>
+
+    </div>
+    <div class="copyright">&copy; Copyright , All rights reserved</div>
+  </div>
+  
+</div>
+<!--end of footer-->
+
+</body>
+</html>

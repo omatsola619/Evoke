@@ -9,6 +9,9 @@ body{
     font-family:'Dosis', sans-serif;
 }
 /*styling for navbar*/
+.navbar{
+    background: ;
+}
 
 .navbar-light .navbar-toggler{
     border: none;

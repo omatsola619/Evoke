@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family:'Dosis', sans-serif;
+}
+
+/*media query for header intro*/
+@media (max-width: 379px){
+    .hard{
+        padding: 10px 0;
+    }
+}
+/*end of media queries for header intro*/
+/*styling for navbar*/
+
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.ml-auto{
+    margin-left: auto !important;
+    padding-right: 30px;
+}
+.nav-link{
+    color: black;
+    font-weight: 600;
+}
+.mr-auto{
+    padding-left: 30px;
+}
+.navbar{
+    position: sticky;
+    top: 0.1px;
+    z-index: 100;
+}
+/*end of styling for navbar*/
+
+
+.col-md-6{
+    padding: 5px;
+
+}
+#col1{
+    padding-top: 100px;
+    line-height: 50px;
+}
+.hard{
+    font-size: 40px;
+    color: #1AA326;
+}
+.head-text{
+    font-size: 20px;
+    line-height: 30px;
+}
+#bot ,#btn-card{
+    background: #1AA326;
+    border: 1px solid #1AA326;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    color: white;
+}
+.card{
+    border: none;
+}
+
+.icon-chemistry,.icon-screen-desktop,.icon-bar-chart
+,.icon-music-tone-alt,.icon-globe,.icon-film,.icon-rocket
+,.icon-wallet{
+    color: #1AA326;
+}
+    .form-control-borderless {
+        border: none;
+    }
+    
+    .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    #search-button{
+        background: #1AA326;
+        color: white;
+    }
+    .highlight-blue {
+        color: #fff;
+        background-color:#1AA326;
+        padding: 50px 0;
+      }  
+      #high-btn{
+        background: #1AA326 ;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        outline: none;
+        color: white;
+    }
+    #high-btn:hover{
+        color: #1AA326;
+        background: white;
+        border: 1px solid #1AA326;
+    }
+     
+      /*styling for graphics design cards*/
+
+#blog{
+    padding-left: 0;
+}
+#tytle{
+    padding-top: 0;
+}
+#card1-img{
+    width: auto;
+    height: 250px;
+}
+#bot:hover{
+    color: #1AA326;
+    background: white;
+    border: 1px solid #1AA326;
+}
+@media (min-width:767px){
+#bot{
+    margin-top: 10px;
+}
+}
+/*media queries for graphics design cards*/
+@media (max-width: 767px){
+    #blog{
+        text-align: center;
+    }
+    #card1-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #blog p{
+        padding: 0 10px;
+    }
+}
+
+/*styling for teachers*/
+#teach-img{
+    width: 100%;
+    height: 300px;
+}
+@media (max-width:767px){
+    .my-text{
+        text-align: center;
+    }
+    .my-text h4{
+        padding-top: 10px;
+    }
+}
+/*end of styling for teachers*/
+.show{
+    color: #1AA326;
+}
+/*styling for why learn from us*/
+#whylearn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    
+}
+#quest{
+    padding-bottom: 30px;
+}
+
+
+
+/*end of styling for why learn from us*/
+/*follow us on social media*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .social-media{
+      text-align: center;
+  }
+
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+ 
+
+/*end of follow us on social media*/
+/*styling for footer*/
+
+#footer-row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.page-end{
+    padding: 50px;
+    color:#f0f9ff;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+.page-end .curve{
+    position: absolute;
+    top: 17%;
+    background: #000;
+    opacity: 0.2;
+    width: 90%;
+    height: 38%;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.page-end h6{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.page-end ul{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.page-end ul a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.page-end ul:hover{
+    opacity: 0.8s;
+    color: #eee;
+}
+.page-end .social{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.page-end .social a{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 39px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #1AA326;
+    box-shadow: 0px 0px 0px 1px #1AA326;
+    margin: 10px;
+    color: #1AA326;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+.page-end .social a:hover{
+    opacity: 0.9s;
+    box-shadow: 0px 1px 3px 2px rgba(225, 225, 225, 0.9);
+}
+.copyright{
+    text-align: center;
+    padding-top: 24px;
+    font-weight: 500;
+    opacity: 16px;
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    .page-end h6{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .page-end ul{
+        text-align: center;
+    }
+    .social{
+        margin: 0 auto;
+    }
+}
+/*end of footer styling*/
+
+
+
+/* media queries for footer background images*/
+@media (max-width: 500px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #bot{
+        vertical-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    #whycol{
+        padding-top: 10px;
+    }
+    #login-signin{
+        text-align: center;
+        padding-left: 15%;
+    }
+
+
+
+
+    #login-signin #login:hover{
+        color: white;
+        background: #1AA326;
+        transition: 0.2s ease-in;
+        margin: 0 auto;
+    }
+    .navbar ul li a:hover{
+        color: white;
+        background: #1AA326;
+        transition: 0.2s ease-in;
+    }
+
+
+
+    .mr-auto{
+        text-align: center;
+    }
+    .ml-auto{
+        text-align: center;
+    }
+}
+@media (min-width: 501px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width: 1025px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+/*end of media queries for footer background images*/
+
+/*why learn from us styling*/
+#reason{
+    padding-top: 30px;
+}
+#whycol h6{
+    font-size: 30px;
+}
+#whycol p{
+    font-size: 20px;
+}
+
+/*media queries for why learn from us on mobile devices*/
+@media (max-width: 767px){
+    #whycol{
+        padding-bottom: 40px;
+    }
+}

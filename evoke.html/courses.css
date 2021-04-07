@@ -5,7 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
-
+body{
+    font-family:'Dosis', sans-serif;
+}
 
 /*styling for navbar*/
 
@@ -41,6 +43,14 @@
     height: 100%;
     padding: 150px 15px 60px 15px;
 }
+#search-box{
+    position: relative;
+    top: 50px;
+}
+#search-header{
+    position: relative;
+    top: 30px;
+}
 .main-section h1{
     font-size:45px;
 }
@@ -71,9 +81,25 @@
 #search-header{
     color: white;
 }
+.icon-magnifier{
+    color: white;
+}
+.form-control-lg{
+    text-align: center;
+}
 
 /*end of styling for search bar*/
 
+
+/*styling for categories*/
+ul a li{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/*end of styling for categories*/
 
 /*styling for footer*/
 
@@ -172,6 +198,17 @@
 }
 /*end of footer styling*/
 /*styling for cards*/
+#post-image{
+    max-height:170px;
+}
+.card-heading{
+    text-transform: uppercase;
+    padding-top: 40px;
+    color: #1AA326;
+}
+.my-cards{
+    background: rgb(243, 241, 241);
+}
 .card img{
     max-height: 200px;
 }
@@ -186,9 +223,147 @@
 .card-title h5{
     padding-left: 15px;
 }
+.card-money{
+    display: inline;
+}
+#the-btn{
+    float: right;
+    background: white;
+    color: #1AA326;
+    border: 2px solid #1AA326;
+}
+#the-btn:hover{
+    background: #1AA326;
+    color: white;
+    border: 2px solid #1AA326;
+    transition: 0.3s;
+}
+.card-money .price{
+    float: left;
+    font-size: 25px;
+    color: rgb(95, 92, 92);
+}
+.intro{
+    font-size: 11px;
+    color: rgb(150, 147, 147);
+}
+.course-name{
+    font-size: 15px;
+}
 
+
+/*media queries for cards tablet and mobile devices*/
+
+@media (max-width: 575px){
+    .my-cards{
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .card img{
+        max-width: 120px;
+        height: 140px;
+        padding-top: 8px;
+        padding-left: 8px;
+        
+    }
+    .card .card-body{
+        line-height: 0;
+
+    }
+    .card-text{
+        position: relative;
+        top: -80px;
+    }
+    .card-text .intro{
+        position: relative;
+        bottom: 15px;
+    }
+    .card-text .price{
+        position: relative;
+        top: 15px;
+
+    }
+    .card-money #the-btn{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .card-title img{
+        visibility: collapse;
+    }
+   
+    .course-name{
+        font-size: 15px;
+        position: relative;
+        left: -20px;
+
+    }
+
+ 
+}
+
+/*media queries for small tablets*/
+@media (min-width: 576px) and (max-width: 900px) {
+    .card-title img{
+        visibility: collapse;
+    }
+    .course-name{
+        position: relative;
+        left: -20px;
+        font-size: 12px;
+    }
+}
+
+
+/*end of media queries for cards on tablets and mobile devices*/
 
 /*end of styling for cards*/
+/*styling for extra explainer image*/
+#im{
+    width: auto;
+}
+.txt{
+    position: relative;
+    top: 15%;
+    padding-bottom: 30px;
+}
+@media (min-width:768px) and (max-width:991px){
+    .txt{
+    position: relative;
+    top: 25%; 
+    line-height: 9px;
+    }
+    .txt h4{
+        font-size: 30px;
+    }
+    .txt p{
+        font-size: 15px;
+    }
+}
+@media (min-width:992px){
+    .txt{
+        position: relative;
+        top: 25%; 
+        }
+        .txt h4{
+            font-size: 40px;
+        }
+        .txt p{
+            font-size: 20px;
+        }
+    }
+
+/* end of styling for extra explainer image*/
+
+
 
 /*styling for footer background image*/
 @media (max-width: 500px){

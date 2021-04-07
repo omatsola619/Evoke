@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(219, 226, 226);
+    font-family:'Dosis', sans-serif;
+}
+.row{
+    background: white;
+    border-radius: 30px;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #1AA326;
+}
+.btn1 {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background: #1AA326;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#gender,#education ,#country{
+    height: 48px;
+    width: 100%;
+}
+.btn1:hover{
+    color: #1AA326;
+    background: white;
+    border: 1px solid ;
+}
+footer p{
+    font-size: 15px;
+}
+#login-btn{
+
+    width: 150px;
+}

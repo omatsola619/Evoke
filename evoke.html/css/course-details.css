@@ -8,10 +8,9 @@
 body{
     font-family:'Dosis', sans-serif;
 }
+
+
 /*styling for navbar*/
-.navbar{
-    background: ;
-}
 
 .navbar-light .navbar-toggler{
     border: none;
@@ -33,135 +32,150 @@ body{
     z-index: 100;
 }
 /*end of styling for navbar*/
+/*styling for product card*/
+.checked {
+    color: orange;
+  }
+  .check{
+      color: rgb(204, 137, 12);
+  }
+  .star-rating span{
+      padding-top: 3px;
+  }
+  .star-rating{
+    margin-top: 20px;
 
-/*styling for cards*/
-#post-image{
-    max-height:170px;
+  }
+  .user{
+      margin-top: 20px;
+  }
+  .user-pic{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+  .user .text{
+    padding-top: 8px;
+    padding-left: 10px;
 }
-.card-heading{
-    text-transform: uppercase;
-    padding-top: 40px;
-    color: #1AA326;
+.whole{
+    margin-bottom: 20px;
 }
-.my-cards{
-    background: rgb(243, 241, 241);
-}
-.card img{
-    max-height: 200px;
-}
-.card-title{
-    display: flex;
-}
-.card-title img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.card-title h5{
-    padding-left: 15px;
-}
-.card-money{
-    display: inline;
-}
-#the-btn{
-    float: right;
-    background: white;
-    color: #1AA326;
-    border: 2px solid #1AA326;
-}
-#the-btn:hover{
+.details #apply{
+    border: 1px solid #1AA326;
     background: #1AA326;
     color: white;
-    border: 2px solid #1AA326;
-    transition: 0.3s;
+    width: 200px;
+    margin-top: 6px;
 }
-.card-money .price{
-    float: left;
+.details #add{
+    border: 1px solid #1AA326;
+    color: #1AA326;
+    width: 200px;
+    margin-top: 6px;
+}
+.details #apply:hover{
+    background: white;
+    border: 1px solid #1AA326;
+    color: #1AA326;
+}
+.details #add:hover{
+    border: 1px solid #1AA326;
+    background: #1AA326;
+    color: white;
+}
+/*end of styling for product card*/
+
+/*breadcrumb styling*/
+
+ /* Style the list */
+ ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  } 
+
+/*end of styling for breadcrumb*/
+
+/*styling for jumbotron*/
+.jumbotron{
+    width: 82%;
+}
+@media (max-width:576px){
+    .jumbotron{
+        width: 100%;
+    }
+}
+/*extra course information*/
+
+@media (max-width:576px){
+    .cont .row .col-sm-4{
+        margin-bottom: 10px;
+    }
+}
+/*teach on evoke*/
+.teach{
+    border: 1px solid rgba(165, 162, 162, 0.596);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#inst{
+    background: #1AA326;
+    color: white;
+    width: 200px;
+}
+#inst:hover{
+    background: white;
+    color: #1AA326;
+    border: 1px solid #1AA326;
+    transition: ease-in-out;
+}
+/*styling for description*/
+.desc{
+    position: relative;
+    left: 15%;
     font-size: 25px;
-    color: rgb(95, 92, 92);
-}
-.intro{
-    font-size: 11px;
-    color: rgb(150, 147, 147);
-}
-.course-name{
-    font-size: 15px;
 }
 
-
-/*media queries for cards tablet and mobile devices*/
-
-@media (max-width: 575px){
-    .my-cards{
-        width: 100%;
-        height: auto;
-    }
-    .card{
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-direction: row;
-        
-    }
-    
-    .card img{
-        max-width: 120px;
-        height: 140px;
-        padding-top: 8px;
-        padding-left: 8px;
-        
-    }
-    .card .card-body{
-        line-height: 0;
-
-    }
-    .card-text{
-        position: relative;
-        top: -80px;
-    }
-    .card-text .intro{
-        position: relative;
-        bottom: 15px;
-    }
-    .card-text .price{
-        position: relative;
-        top: 15px;
-
-    }
-    .card-money #the-btn{
-        position: relative;
-        bottom: 10px;
-    }
-
-    .card-title img{
-        visibility: collapse;
-    }
-   
-    .course-name{
-        font-size: 15px;
-        position: relative;
-        left: -20px;
-
-    }
-
- 
+.desc a{
+    border: 1px solid rgba(165, 162, 162, 0.596);
+    color: #1AA326;
 }
-
-/*media queries for small tablets*/
-@media (min-width: 576px) and (max-width: 900px) {
-    .card-title img{
-        visibility: collapse;
-    }
-    .course-name{
+@media (max-width:576px){
+    .desc{
+        text-align: center;
         position: relative;
-        left: -20px;
-        font-size: 12px;
+        left: 0;
     }
 }
-
-
-/*end of media queries for cards on tablets and mobile devices*/
-
 /*styling for footer*/
 
 #footer-row{
@@ -230,7 +244,6 @@ body{
     color: #1AA326;
     opacity: 0.7;
     transition: 0.3s ease-in-out;
-    text-decoration: none;
 }
 .page-end .social a:hover{
     opacity: 0.9s;
@@ -257,10 +270,11 @@ body{
         margin: 0 auto;
     }
 }
-/*styling for footer background image*/
+/*end of footer styling*/
+/* media queries for footer background images*/
 @media (max-width: 500px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher2.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher2.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -276,6 +290,10 @@ body{
         text-align: center;
         padding-left: 15%;
     }
+
+
+
+
     #login-signin #login:hover{
         color: white;
         background: #1AA326;
@@ -287,6 +305,9 @@ body{
         background: #1AA326;
         transition: 0.2s ease-in;
     }
+
+
+
     .mr-auto{
         text-align: center;
     }
@@ -296,14 +317,14 @@ body{
 }
 @media (min-width: 501px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher3.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher3.jpg);
         background-position: center;
         background-size: cover;
     }
 }
 @media (max-width: 1025px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher.jpg);
         background-position: center;
         background-size: cover;
     }

@@ -328,7 +328,7 @@ body{
 /* media queries for footer background images*/
 @media (max-width: 500px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher2.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher2.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -371,14 +371,14 @@ body{
 }
 @media (min-width: 501px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher3.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher3.jpg);
         background-position: center;
         background-size: cover;
     }
 }
 @media (max-width: 1025px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher.jpg);
         background-position: center;
         background-size: cover;
     }

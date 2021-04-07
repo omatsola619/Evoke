@@ -5,9 +5,6 @@
     list-style: none;
     text-decoration: none;
 }
-body{
-    font-family:'Dosis', sans-serif;
-}
 
 
 /*styling for navbar*/
@@ -32,150 +29,85 @@ body{
     z-index: 100;
 }
 /*end of styling for navbar*/
-/*styling for product card*/
-.checked {
-    color: orange;
-  }
-  .check{
-      color: rgb(204, 137, 12);
-  }
-  .star-rating span{
-      padding-top: 3px;
-  }
-  .star-rating{
-    margin-top: 20px;
 
-  }
-  .user{
-      margin-top: 20px;
-  }
-  .user-pic{
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-  }
-  .user .text{
-    padding-top: 8px;
-    padding-left: 10px;
+
+.col-md-6{
+    padding: 5px;
+
 }
-.whole{
-    margin-bottom: 20px;
+#col1{
+    padding-top: 100px;
+    line-height: 50px;
 }
-.details #apply{
-    border: 1px solid #1AA326;
-    background: #1AA326;
-    color: white;
-    width: 200px;
-    margin-top: 6px;
-}
-.details #add{
-    border: 1px solid #1AA326;
-    color: #1AA326;
-    width: 200px;
-    margin-top: 6px;
-}
-.details #apply:hover{
-    background: white;
-    border: 1px solid #1AA326;
+.hard{
+    font-size: 40px;
     color: #1AA326;
 }
-.details #add:hover{
-    border: 1px solid #1AA326;
+.head-text{
+    font-size: 20px;
+    line-height: 30px;
+}
+#bot ,#btn-card{
     background: #1AA326;
-    color: white;
-}
-/*end of styling for product card*/
-
-/*breadcrumb styling*/
-
- /* Style the list */
- ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
-  
-  /* Display list items side by side */
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 13px;
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  
-  /* Add a color on mouse-over */
-  ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  } 
-
-/*end of styling for breadcrumb*/
-
-/*styling for jumbotron*/
-.jumbotron{
-    width: 82%;
-}
-@media (max-width:576px){
-    .jumbotron{
-        width: 100%;
-    }
-}
-/*extra course information*/
-
-@media (max-width:576px){
-    .cont .row .col-sm-4{
-        margin-bottom: 10px;
-    }
-}
-/*teach on evoke*/
-.teach{
-    border: 1px solid rgba(165, 162, 162, 0.596);
+    border: 1px solid #1AA326;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-#inst{
-    background: #1AA326;
+    width: 150px;
+    height: 45px;
+    outline: none;
     color: white;
-    width: 200px;
 }
-#inst:hover{
-    background: white;
-    color: #1AA326;
-    border: 1px solid #1AA326;
-    transition: ease-in-out;
-}
-/*styling for description*/
-.desc{
-    position: relative;
-    left: 15%;
-    font-size: 25px;
+.card{
+    border: none;
 }
 
-.desc a{
-    border: 1px solid rgba(165, 162, 162, 0.596);
+.icon-chemistry,.icon-screen-desktop,.icon-bar-chart
+,.icon-music-tone-alt,.icon-globe,.icon-film,.icon-rocket
+,.icon-wallet{
     color: #1AA326;
 }
-@media (max-width:576px){
-    .desc{
-        text-align: center;
-        position: relative;
-        left: 0;
+    .form-control-borderless {
+        border: none;
     }
-}
+    
+    .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    #search-button{
+        background: #1AA326;
+        color: white;
+    }
+    .highlight-blue {
+        color: #fff;
+        background-color:#1AA326;
+        padding: 50px 0;
+      }  
+      #high-btn{
+        background: #1AA326 ;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        outline: none;
+        color: white;
+      }
+     
+      
+
+      #blog:before{
+        content: '';
+        width: 2.3rem;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -2.3rem;
+        z-index: 10;
+        transform: skewX(-5deg);
+      }
+
 /*styling for footer*/
 
 #footer-row{
@@ -271,10 +203,25 @@ body{
     }
 }
 /*end of footer styling*/
+
+/*styling for why learn from us*/
+#whylearn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+#quest{
+    padding-bottom: 30px;
+}
+
+
+
+/*end of styling for why learn from us*/
+
 /* media queries for footer background images*/
 @media (max-width: 500px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher2.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher2.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -317,14 +264,14 @@ body{
 }
 @media (min-width: 501px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher3.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher3.jpg);
         background-position: center;
         background-size: cover;
     }
 }
 @media (max-width: 1025px){
     .page-end{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/teacher.jpg);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher.jpg);
         background-position: center;
         background-size: cover;
     }

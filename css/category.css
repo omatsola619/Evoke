@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family:'Dosis', sans-serif;
+}
+/*styling for navbar*/
+
+
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.ml-auto{
+    margin-left: auto !important;
+    padding-right: 30px;
+}
+.nav-link{
+    color: black;
+    font-weight: 600;
+}
+.mr-auto{
+    padding-left: 30px;
+}
+.navbar{
+    position: sticky;
+    top: 0.1px;
+    z-index: 100;
+}
+/*end of styling for navbar*/
+
+/*styling for cards*/
+#post-image{
+    max-height:170px;
+}
+.card-heading{
+    text-transform: uppercase;
+    padding-top: 40px;
+    color: #1AA326;
+}
+.my-cards{
+    background: rgb(243, 241, 241);
+}
+.card img{
+    max-height: 200px;
+}
+.card-title{
+    display: flex;
+}
+.card-title img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.card-title h5{
+    padding-left: 15px;
+}
+.card-money{
+    display: inline;
+}
+#the-btn{
+    float: right;
+    background: white;
+    color: #1AA326;
+    border: 2px solid #1AA326;
+}
+#the-btn:hover{
+    background: #1AA326;
+    color: white;
+    border: 2px solid #1AA326;
+    transition: 0.3s;
+}
+.card-money .price{
+    float: left;
+    font-size: 25px;
+    color: rgb(95, 92, 92);
+}
+.intro{
+    font-size: 11px;
+    color: rgb(150, 147, 147);
+}
+.course-name{
+    font-size: 15px;
+}
+
+
+/*media queries for cards tablet and mobile devices*/
+
+@media (max-width: 575px){
+    .my-cards{
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .card img{
+        max-width: 120px;
+        height: 140px;
+        padding-top: 8px;
+        padding-left: 8px;
+        
+    }
+    .card .card-body{
+        line-height: 0;
+
+    }
+    .card-text{
+        position: relative;
+        top: -80px;
+    }
+    .card-text .intro{
+        position: relative;
+        bottom: 15px;
+    }
+    .card-text .price{
+        position: relative;
+        top: 15px;
+
+    }
+    .card-money #the-btn{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .card-title img{
+        visibility: collapse;
+    }
+   
+    .course-name{
+        font-size: 15px;
+        position: relative;
+        left: -20px;
+
+    }
+
+ 
+}
+
+/*media queries for small tablets*/
+@media (min-width: 576px) and (max-width: 900px) {
+    .card-title img{
+        visibility: collapse;
+    }
+    .course-name{
+        position: relative;
+        left: -20px;
+        font-size: 12px;
+    }
+}
+
+
+/*end of media queries for cards on tablets and mobile devices*/
+
+/*styling for footer*/
+
+#footer-row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.page-end{
+    padding: 50px;
+    color:#f0f9ff;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+.page-end .curve{
+    position: absolute;
+    top: 17%;
+    background: #000;
+    opacity: 0.2;
+    width: 90%;
+    height: 38%;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.page-end h6{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.page-end ul{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.page-end ul a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.page-end ul:hover{
+    opacity: 0.8s;
+    color: #eee;
+}
+.page-end .social{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.page-end .social a{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 39px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #1AA326;
+    box-shadow: 0px 0px 0px 1px #1AA326;
+    margin: 10px;
+    color: #1AA326;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.page-end .social a:hover{
+    opacity: 0.9s;
+    box-shadow: 0px 1px 3px 2px rgba(225, 225, 225, 0.9);
+}
+.copyright{
+    text-align: center;
+    padding-top: 24px;
+    font-weight: 500;
+    opacity: 16px;
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    .page-end h6{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .page-end ul{
+        text-align: center;
+    }
+    .social{
+        margin: 0 auto;
+    }
+}
+/*styling for footer background image*/
+@media (max-width: 500px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #bot{
+        vertical-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    #whycol{
+        padding-top: 10px;
+    }
+    #login-signin{
+        text-align: center;
+        padding-left: 15%;
+    }
+    #login-signin #login:hover{
+        color: white;
+        background: #1AA326;
+        transition: 0.2s ease-in;
+        margin: 0 auto;
+    }
+    .navbar ul li a:hover{
+        color: white;
+        background: #1AA326;
+        transition: 0.2s ease-in;
+    }
+    .mr-auto{
+        text-align: center;
+    }
+    .ml-auto{
+        text-align: center;
+    }
+}
+@media (min-width: 501px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width: 1025px){
+    .page-end{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+/*end of media queries for footer background images*/

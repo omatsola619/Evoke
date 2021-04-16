@@ -1,0 +1,64 @@
+body {
+    font-family: "Dosis";
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1AA326;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-right-radius: 30px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #1AA326;
+    background: white;
+  }
+  .sidenav a:active{
+    background: white;
+    color: #1AA326;
+  }
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/*navbar brand for sidebar*/
+.sidebar-brand{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.sidenav .extra{
+  position: relative;
+  top: 50%;
+}
+/*fade effect for the image*/
+.fade-in{
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,69 @@
+body {
+  font-family: "Dosis";
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1AA326;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-top-right-radius: 30px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.404);
+}
+.sidenav a.active{
+  background: white;
+  color: #1AA326;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*navbar brand for sidebar*/
+.sidebar-brand{
+font-size: 25px;
+margin-bottom: 20px;
+}
+.sidenav .extra{
+position: relative;
+top: 50%;
+}
+.content img{
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  border: 2px solid rgba(255, 255, 255, 0.267); 
+}
+
+
+/*media queries for content on smaller devices*/
+@media screen and (max-width: 600px){
+  .content img{
+    width: 150px;
+    height: 150px;
+  }
+}
